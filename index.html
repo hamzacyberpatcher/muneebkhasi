@@ -63,7 +63,8 @@
 		<main>
 			<div class="container-fluid1 container-fluid bg-1 text-center">
 				<h3>Who Am I?</h3>
-				<img id="myImageId" src="images/kahsi.jpg" alt="Khasi Bakra" class="rounded-circle img-fluid img-thumbnail" onclick="playAudio()">
+				<img id="khasi" src="images/kahsi.jpg" alt="Khasi Bakra" class="rounded-circle img-fluid img-thumbnail" onclick="playAudio()">
+				<img id="goat" src="images/goat.png" alt="Khasi Bakra" class="rounded-circle img-fluid img-thumbnail" onclick="playAudio()" style="display:none;">
 				<h3>I'm a khasi bakra</h3>
 			</div>
 			<div class="container-fluid1 container-fluid bg-2 text-center">
@@ -77,15 +78,18 @@
 		myAudio.src = 'audio/goat.mp3';
 		myAudio.autoplay = true;
 		myAudio.loop = false;
-		let image = document.getElementById("myImageId");
-		let getAttr = image.getAttribute("src");
-		if (getAttr == "images/goat.png")
+		let goat = document.getElementById("goat");
+		let khasi = document.getElementById("khasi");
+		if (goat.style.display == "none")
 		{
-			image.src = "images/kahsi.jpg";
+			goat.style.display = "block";
+			khasi.style.display = "none";
 		}
 		else
 		{
-			image.src = "images/goat.png";
+			goat.style.display = "none";
+			khasi.style.display = "block";
+			khasi.classList.add("mx-auto");
 		}
 		}
 		</script>
