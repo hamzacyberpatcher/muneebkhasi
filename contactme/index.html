@@ -13,6 +13,19 @@
 		}
 		body {
 		overflow-x: hidden;
+		background-color: #1abc9c;
+		}
+		.bg-1 {
+		background-color: #1abc9c; /* Green */
+		color: #ffffff;
+		}
+		.bg-2 {
+			background-color: firebrick;
+			color : white;
+		}
+		.container-fluid1 {
+		padding-top: 70px;
+		padding-bottom: 70px;
 		}
 		</style>
 	</head>
@@ -34,7 +47,7 @@
 								<a class="nav-link mx-2" href="../acheivements/">Acheivements</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link mx-2 active" href="#">Goals</a>
+								<a class="nav-link mx-2" href="../goals/">Goals</a>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -43,7 +56,7 @@
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 									<li><a class="dropdown-item" href="../institutions/">Instituion</a></li>
 									<li><a class="dropdown-item" href="../wanted/">Wanted</a></li>
-									<li><a class="dropdown-item" href="../contactme/">Contact me</a></li>
+									<li><a class="dropdown-item active" href="#">Contact me</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -53,44 +66,37 @@
 		</div>
 		<main>
 			<div class="row">
-				<div class="container-fluid px-5 pt-5 text-center h1 m-0" style="color:white;background-color: #1abc9c;">My Goals</div>
+				<div class="container-fluid bg-1 text-center"><img id="contactme" height="100" src="../images/contact.png" alt="contact me" class="img-fluid"/>
+				</div>
 			</div>
 			<div class="row">
-				<div class="container-fluid p-5 m-0" style="color:white;background-color: #1abc9c;">
-					<p>I have these goals in my mind that I want to acheieve at all costs. These goals are for the betterment of my nation and the whole world.
+				<div class="container-fluid1 container-fluid bg-2">
+					<p><h5>You can contact me at:</h5> 
 						<ol>
-							<li>To become the Mr. Gay Universe 3069.</li>
-							<li>To get a position in the board.</li>
-							<li>To become the best software engineer in this world.</li>
-							<li>To live an honorable and dignified life.</li>
-							<li>To protect the rights of trangender and homosexual community in my country.</li>
-							<li>To help everybody that I can reach out to.</li>
-							<li>To revolutionize the IT industry in my country.</li>
-							<li>To make my parents proud of me.</li>
-							<li>To become the best artist in the world.</li>
-							<li>To find a suitable partner who I can live with and make him happy.</li>
-							<li>To become the most generous philanthrophist in the world.</li>
-							<li>To make my dreams a reality.</li>
+							<li>My phone number : +92-333-6969696</li>
+							<li>Instagram : <a href="https://www.instagram.com/monimuneeb50/">monimuneeb</a></li>
+							<li>House Address: 69-A, Big quarters, Railway Engine Shed, near UET, Lahore</li>
+							<li>College : Government College and University, Upper Mall Road, Lahore</li>
 						</ol>
-						I know that my goals are quite difficult to acheive but as a wise man once said <q>You must do the things you think you cannot do.</q> ― Eleanor Roosevelt. I would work har day and night to make these dreams of mine into absolute reality as these goals of mine are for the betterment of the whole humanity.
 					</p>
 				</div>
-			</main>
-			<div class="row">
-				<footer class="container-fluid text-center bg-secondary container-fluid2">
-					<div>
-						<a href="https://www.facebook.com/LGBTQ/">
-							<button class="btn btn-primary" type="button">
-							<i class="fa-brands fa-facebook"></i>
-						</button></a>
-						<a href="https://www.instagram.com/monimuneeb50/"><button class="btn btn-danger" type="button">
-							<i class="fa-brands fa-instagram"></i>
-						</button></a>
-						<a href="https://www.instagram.com/lgbt/?hl=en">
-							<button class="btn btn-success" type="button">
-							<i class="fa-brands fa-whatsapp"></i>
-						</button></a>
-					</div>
-				</footer>
 			</div>
-		</body>
+		</main>
+		<div class="row">
+			<footer class="container-fluid text-center bg-secondary container-fluid2">
+				<div>
+					<a href="https://www.facebook.com/LGBTQ/">
+						<button class="btn btn-primary" type="button">
+						<i class="fa-brands fa-facebook"></i>
+					</button></a>
+					<a href="https://www.instagram.com/monimuneeb50/"><button class="btn btn-danger" type="button">
+						<i class="fa-brands fa-instagram"></i>
+					</button></a>
+					<a href="https://www.instagram.com/lgbt/?hl=en">
+						<button class="btn btn-success" type="button">
+						<i class="fa-brands fa-whatsapp"></i>
+					</button></a>
+				</div>
+			</footer>
+		</div>
+	</body>
